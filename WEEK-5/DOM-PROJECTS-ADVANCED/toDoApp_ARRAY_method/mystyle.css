@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    min-width: 500px;
+  }
+  
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+    font-family:'Century Gothic', sans-serif;
+    font-size: 20px;
+    color: #444;
+  }
+  
+  h1{ margin: 10px; font-size: 36px; color: white}
+  h2{ font-size: 26px ; text-align: center}
+  
+  /* Results to display */
+  #myRES{
+      padding: 30px 50px;
+  }
+  #myRES > p{
+      padding: 8px;
+      position: relative;
+      border-bottom: 1px dotted #ddd;
+  }
+  #myRES > p:hover{
+      background-color: #eee;
+  }
+  #myRES > p > span{
+      position: absolute;
+      text-align: center;
+      right: 0px;
+      top: 0px;
+      width: 40px;
+      height: 40px;
+      background-color: #eee;
+  }
+  #myRES > p > span a{
+      text-decoration: none;
+      font-size: 34px;
+      font-weight: bold;
+  }
+  #myRES > p > span:hover a{
+      color: white;
+  }
+  #myRES > p > span:hover{
+      background-color: red;
+  }
+  #myRES > p.checked{
+      text-decoration: line-through;
+      color: #999;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f44336;
+    background: linear-gradient(to right, yellowgreen, green, teal 100%);
+    padding: 30px 50px 50px 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  .header input {
+    margin: 0;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    width: 75%;
+    padding: 12px 12px 12px 20px;
+    float: left;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 12px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0px 30px 30px 0px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }

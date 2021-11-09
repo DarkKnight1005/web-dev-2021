@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+  <div id="myDIV" class="header">
+    <h2 style="margin:5px">My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+
+  <ul id="myUL">
+    <li>Hit the gym<span class="close">&#215;</span></li>
+    <li class="checked">Pay bills<span class="close">&#215;</span></li>
+    <li>Meet George<span class="close">&#215;</span></li>
+    <li>Buy eggs<span class="close">&#215;</span></li>
+    <li>Read a book<span class="close">&#215;</span></li>
+    <li>Organize office<span class="close">&#215;</span></li>
+  </ul>
+
+<script src="app.js"></script>
+
+</body>
+</html>

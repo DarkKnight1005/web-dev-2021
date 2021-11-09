@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		form{ font-family: Century Gothic, sans-serif; width: 500px; margin: 0 auto; border: 1px dotted silver; padding: 50px; margin-top: 30px;}
+		h1{ border-bottom: 1px solid silver; padding-bottom: 20px }
+		input[type="text"] { width: 350px; padding: 5px}
+		input[type="submit"] { width: 130px; padding: 5px}
+		ul{ width: 100%; padding-left: 0}
+		li{ width: 100%; padding: 10px 0px; position: relative; list-style-type: none; border-bottom: 1px dotted silver;}
+		span{ position: absolute; right: 0px; bottom: 0px; padding: 5px 10px; background-color: red; color: white; cursor: pointer;}
+	</style>
+</head>
+<body>
+	<form id="task-form">
+		<h1>Tasks List APP</h1>
+		<input type="text" id="task" placeholder="type tasks and submit!">
+		<input type="submit" name="button" value="ADD" class="btn">
+		<br><br>
+		<ul class="collection"></ul>
+		<hr>
+		<input type="submit" name="button" value="CLEAR ALL TASKS" class="clear-tasks">
+	</form>
+	<script src="taskListapp.js"></script>
+</body>
+</html>
