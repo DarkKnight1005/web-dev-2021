@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quiz Assignment 1</h1>
+    <form name="frm">
+        Destination <select>
+            <option value="London">London</option>
+            <option value="Baku">Baku</option>
+            <option value="New_York">New York</option>
+            <option value="Rotterdam">Rotterdam</option>
+        </select>
+        <br><br>
+        Adults <input type="number" id="adults" value=1>
+        <br><br>
+        <div></div>
+        Children (under 6 ages) <input type="number" id="children" value=1>
+        <br><br>
+        <div></div>
+        <input type="radio" name="rad" value="trip" id="trip">
+        <label for="trip">Round Trip</label>
+        <input type="radio" name="rad" value="one_way" id="one_way">
+        <label for="one_way">One Way</label>
+        <br><br>
+        <div></div>
+        <input type="radio" name="rad1" value="standart" id="standart">
+        <label for="trip">Standart class</label>
+        <input type="radio" name="rad1" value="business" id="business">
+        <label for="one_way">Business class</label>
+        <br><br>
+        Extra Luggage <select onchange="onDropDownLuggageCange(this.value);">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+        </select>
+        <br><br>
+        <div id="wight_div">
+            Weight (in Kg, 1Kg = 20$) <input type="number" id="weight">
+            <br><br>
+        </div> 
+
+    </form>
+    <button>Submit</button>
+
+    <div></div>
+    <div id="price_list"></div>
+    <div></div>
+    <div></div>
+    <br><br>
+    <div id="price">Total Price: </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
